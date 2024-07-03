@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1719347156 source:c:\users\gabriel\onedrive\documentos\puc\aeds1\projetos em c\carro\main.cpp
+	<iostream>
+	"Car.h"
+
+1719346957 source:c:\users\gabriel\onedrive\documentos\puc\aeds1\projetos em c\carro\car.cpp
+	"Car.h"
+	<string.h>
+
+1719346439 c:\users\gabriel\onedrive\documentos\puc\aeds1\projetos em c\carro\car.h
+
