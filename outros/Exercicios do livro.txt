@@ -1,0 +1,43 @@
+Exercicios do livro
+capitulo 3 
+12)
+Entrada:Códigos, salario atual
+saida:Código, cargo, aumento e novo salário
+processamento: Condições que determinam o aumento do salario e seu cargo
+
+Algoritmo
+Declare c,s,ns,aumento numerico
+Escreva("Digite seu código de cargo:")
+Leia(c)
+Escreva("Digite seu salario atual:")
+Leia(s)
+Se c==1
+	entao inicio
+	aumento <- s* 50/100
+	ns<-s+aumento
+	escreva "O aumento é de",aumento
+	escreva"Seu cargo é Escrituario e seu novo salario eh",ns
+	fim
+Senao Se c==2
+	entao inicio
+	aumento <- s* 35/100
+	ns<-s+aumento
+	escreva "O aumento é de",aumento
+	escreva"Seu cargo é secretario e seu novo salario eh",ns
+	fim
+	Senao Se c==2
+		entao inicio
+		aumento <- s* 35/100
+		ns<-s+aumento
+		escreva "O aumento é de",aumento
+		escreva"Seu cargo é secretario e seu novo salario eh",ns
+		fim
+	      Senao Se c==5
+			entao inicio
+			escreva "Não ha aumento
+			escreva"Seu cargo é diretor e seu salario eh",s
+			fim
+		   Senao escreva "Cargo inexistente"
+
+
+

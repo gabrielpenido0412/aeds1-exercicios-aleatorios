@@ -1,0 +1,34 @@
+<main>
+    <section class="secao1">
+      <div class="container">
+        <img class="thumbnail" src="imgs/ExplorarAsset.jpg" alt="">
+        <h1>Explorar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis aut ipsam qui ad distinctio
+          debitis molestiae eligendi at reprehenderit, similique repellat necessitatibus, ipsa, possimus libero ea
+          cupiditate ut doloremque.</p>
+      </div>
+    </section>
+    <div class="background">
+            <img class="imagem de fundo" src="imgs/—Pngtree—purple memphis geometric shape_6864376.png" alt="">
+        </div>
+    
+    <section class="secao2">
+      <div>
+      
+          <img class="imagem1" src="imgs/img1.png" alt="">
+        </div>
+        <div>
+          <img class="imagem2" src="imgs/img2.png" alt="">
+        </div>
+        <div>
+          <img class="imagem3" src="imgs/img3.png" alt="">
+        </div>
+    
+      <div>
+        <img class="imagem4" src="imgs/img4.png" alt="">
+      </div>
+      <div>
+        <img class="imagem5" src="imgs/img5.png" alt="">
+      </div>
+    </section>
+  </main>

@@ -1,0 +1,15 @@
+<section class="seção1" >
+            <h1 class="nome_perfil">Perfil</h1>
+            <img class="foto_de_perfil" src="imgs/Foto de perfil.png" alt="">
+            <div class="informações">
+                <h3 class="titulo">Gabriel Penido Viglioni</h3>
+                <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis at enim itaque iste culpa assumenda sequi! Mollitia magni repellendus velit, provident officiis numquam, assumenda quam quos beatae, voluptatem aspernatur voluptates?</p>
+                <p class="location"><strong>Location:</strong><span>Brasil,Belo Horizonte,MG</span></p>
+                <p class="site"><strong>Site:</strong> <span>https://www.pucminas.br/destaques/Paginas/default.aspx</span> </p>
+            </div>
+            <div class="icones">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>

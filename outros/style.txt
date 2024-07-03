@@ -1,0 +1,67 @@
+// C++ code
+//
+ enum LED {
+	GREEN = 3,
+  	YELLOW = 4,
+  	RED = 5,
+    BUTTON=7
+};
+unsigned long ultimotempopressionado=0;
+unsigned long  delaybutton= 200;
+bool buttonsinal=0;
+bool buttonpressionado=0;
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(LED::GREEN, OUTPUT);
+  pinMode(LED::YELLOW, OUTPUT);
+  pinMode(LED::RED, OUTPUT);
+  pinMode(LED::BUTTON, INPUT);
+  //O sinal começa verde
+  digitalWrite(LED::RED, LOW);
+  digitalWrite(LED::YELLOW, LOW);
+  digitalWrite(LED::GREEN, HIGH);
+}
+
+void loop()
+{
+  //Se o botao for pressionado, o bu
+  if(digitalRead(LED::BUTTON)==HIGH && !buttonpressionado && millis() - ultimotempopressionado > delaybutton ){
+    Serial.println("Botão apertado");
+   	buttonpressionado=1;
+    ultimotempopressionado=millis();
+  }
+ //Se o botao for pressionado, ativa o sinal
+  if(buttonpressionado==1){
+  	buttonsinal=1;
+    buttonpressionado==0;
+    //Apaga tudo
+    digitalWrite(LED::RED,LOW);
+    digitalWrite(LED::YELLOW,LOW);
+    digitalWrite(LED::GREEN,LOW);
+    //Acende só o vermelho
+    digitalWrite(LED::RED,HIGH);
+    //Depois de dois segundos, ele volta ao ciclo normal
+    delay(2000);
+    //O botão é despressionado
+    buttonsinal=0;
+  }
+  //se o butao não ta apetado, o ciclo volta ao normal
+  if(digitalRead(LED::BUTTON)==LOW){
+    //VERDE
+  	digitalWrite((LED::GREEN),HIGH);
+    delay(5000);
+    digitalWrite((LED::GREEN),LOW);
+   
+    //AMARELO
+    digitalWrite((LED::YELLOW),HIGH);
+    delay(2000);
+    digitalWrite((LED::YELLOW),LOW);
+   
+    //VERMELHO
+    digitalWrite((LED::RED),HIGH);
+    delay(5000);
+    digitalWrite((LED::RED),LOW);
+  }
+    
+}

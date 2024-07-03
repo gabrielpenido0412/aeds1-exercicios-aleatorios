@@ -1,0 +1,81 @@
+Linguagem C
+#include <stdio.h> : é uma biblitoeca responsável pela entrada e saída do projeto. Ela permite que a gente use comandos de entrada e saída
+#include <stdlib.h>: Controla  processos, aloca memórias. Também é responsável pelo comando system("pause").
+/n : pula uma linha
+printf : Escreve alguma coisa
+int main():É uma função que dentro dela, vão estar os conjuntos de comando que vão realizar uma tarefa.
+system pause: Não deixa a tela fechar imediatamente(no code blocks ele não é necessário)
+return 0 : É o valor da função in main ()tf
+O QUE DEU CERTO DE  EQUAÇÃO DO SEGUNDO GRSU
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main() {
+    float a,b,c,delta,x1,x2;
+    setlocale(LC_ALL,"Portuguese");
+    printf("A= ");
+    scanf("%f",&a);
+    printf("B= ");
+    scanf("%f",&b);
+    printf("C= ");
+    scanf("%f",&c);
+    //Se a=0, "não é equação do segundo grau"
+    if(a==0){
+        printf("Não é equação do segundo grau");
+        return 0;
+    }
+    delta = pow(b,2) - 4*a*c;
+    if (delta<0){
+        printf("Não existem raizes reais");
+        return 0;
+    }
+    if (delta==0){
+        x1= ((-b + sqrt(delta))/2*a);
+        printf("A unica raiz é %.1f ",x1);
+    }
+    else{
+        x1= ((-b + sqrt(delta))/2*a);
+        x2= ((-b - sqrt(delta))/2*a);
+        printf("As raizes são : %.1f e %.1f",x1,x2);
+    }
+    return 0;
+}
+
+
+
+
+
+#include <math.h>
+#include <stdio.h>
+#include <assert.h>
+int main(){
+    float a,b,c,delta,x1,x2;
+    printf("Digite o valor de a: ");
+    scanf("%f",&a);
+    printf("Digite o valor de b: ");
+    scanf("%f",&b);
+    printf("Digite o valor de c: ");
+    scanf("%f",&c);
+    if (a==0){
+        printf("Nao e equacao de segundo grau. ");
+        return(0);
+    }
+    delta= pow(b,2) -4*a*c;
+    if (delta<0){
+        printf("Nao ha raizes reais");
+        return(0);
+    }
+    if (delta=0){
+        x1= ((-b + (sqrt(delta))/4*a));
+        return (0);
+    }
+    if (delta>0) {
+        x1= ((-b + (sqrt(delta))/4*a));
+        x2= ((-b - (sqrt(delta))/4*a));
+        printf("As raizes são %f e %f",x1,x2);
+        return (0);
+    }
+}
+
+
+

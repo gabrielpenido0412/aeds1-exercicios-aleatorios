@@ -1,0 +1,53 @@
+<h1 class="titulo">Repositório: Blog responsivo</h1>
+            <img class="imagem" src="assets/img/img1.png" alt="" >
+            <div class="dados">
+                <div class="descrição" id="descrição">
+                    <h6>Descrição</h6>
+                        <p>
+                            Um blog com responsividade em sua página principal, focada para tela do iphone 14.Seu layout da página principal e feito principlamente com flex e grid. Suas outras páginas ainda não foram feitas.</p>
+                </div>
+                <div class="proprietario">
+                    <h3>Proprietário</h3>
+                    <p>Gabriel Penido Viglioni</p>
+                </div>
+                <div class="licensa">
+                    <h3>Licensa</h3>
+                    <p>MIT License</p>
+                </div>
+                <div class="data">
+                    <div class="star">
+                        <i class="fa-regular fa-star">0</i>
+                    </div>
+                    <h3>Data de criação</h3>
+                    <div class="branch">
+                        <i class="fa-solid fa-code-branch">0</i>
+                    </div>
+                    <p>13/04/2024</p>
+                    <div class="users">
+                        <i class="fa-solid fa-user">1</i>
+                    </div>
+                </div>
+                <div class="linguagem" id="linguagem">
+                    <h3>Linguagem</h3>
+                    <p>HTML e CSS</p>
+                </div>
+                <div class="link" id="link">
+                    <h3>Link de acesso</h3>
+                    <a
+                        href="https://github.com/gabrielpenido0412/Blog-Responsivo" target="_blank">https://github.com/gabrielpenido0412/Blog-Responsivo</a>
+                </div>
+                <div class="topicos" id="topicos">
+                    <h3>Tópicos</h3>
+                    <div class="butões">
+                        <button type="button" class="btn btn-primary">HTML</button>
+                        <button type="button" class="btn btn-primary">CSS</button>
+                    </div>
+                </div>
+                <div class="star_mobile">
+                    <i class="fa-regular fa-star">0</i>
+                </div>
+                <div class="users_mobile">
+                    <i class="fa-solid fa-user">1</i>
+                </div>
+            </div>
+        </section>
